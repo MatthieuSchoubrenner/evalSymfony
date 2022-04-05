@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Company{% endblock %}
+
+{% block body %}
+    <h1>Créer une nouvelle entreprise</h1>
+
+    {{ include('company/_form.html.twig') }}
+
+    <a href="{{ path('company_index') }}">retour à la liste des entreprises</a>
+
+    <style>
+        body {
+            background-color: grey;
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        btn {
+            background-color: dodgerblue;
+        }
+    </style>
+{% endblock %}
